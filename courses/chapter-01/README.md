@@ -39,54 +39,15 @@
 
 ---
 
-## 💬 遇到问题？
+## 💬 讨论和交流
 
-如果你在学习过程中遇到任何问题或疑问，欢迎：
+欢迎参与课程讨论！你可以：
 
-- 📝 [提交学习问题](https://github.com/YOUR_USERNAME/YOUR_REPO/issues/new?template=question.md) - 获取帮助和解答
-- 🐛 [报告错误](https://github.com/YOUR_USERNAME/YOUR_REPO/issues/new?template=bug.md) - 帮助我们改进内容
-- 💡 [提出建议](https://github.com/YOUR_USERNAME/YOUR_REPO/issues/new?template=enhancement.md) - 分享你的想法
+- 💭 **[在 GitHub Discussions 中讨论本章内容](https://github.com/shiro123444/CS50/discussions)** - 分享学习心得，提出问题
+- 📝 **[提交学习问题](https://github.com/shiro123444/CS50/issues/new?template=question.md)** - 获取帮助和解答
+- 🐛 **[报告内容错误](https://github.com/shiro123444/CS50/issues/new?template=bug.md)** - 帮助我们改进内容
+- 💡 **[提出改进建议](https://github.com/shiro123444/CS50/issues/new?template=enhancement.md)** - 分享你的想法
 
-📖 不确定如何提交？查看 [Issue 提交指南](../../.github/ISSUE_GUIDE.md)
+> 💡 **提示**：GitHub Discussions 支持 Markdown 格式，可以分享代码、图片和链接。需要 GitHub 账号登录。
 
----
-
-<div class="giscus-container">
-  <h2>💬 讨论区</h2>
-  <p>欢迎在下方分享你的学习心得、提出问题或参与讨论！需要 GitHub 账号登录。</p>
-  
-  <script src="https://giscus.app/client.js"
-          data-repo="shiro123444/CS50"
-          data-repo-id="R_kgDOQUrlZw"
-          data-category="Announcements"
-          data-category-id="DIC_kwDOQUrlZ84CxvUa"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="preferred_color_scheme"
-          data-lang="zh-CN"
-          data-loading="lazy"
-          crossorigin="anonymous"
-          async>
-  </script>
-</div>
-
-<style>
-  .giscus-container {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #e5e7eb;
-  }
-  
-  .giscus-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .giscus-container p {
-    color: #6b7280;
-    margin-bottom: 1.5rem;
-  }
-</style>
+📖 **不确定如何使用？** 查看 [Issue 提交指南](../../.github/ISSUE_GUIDE.md)
