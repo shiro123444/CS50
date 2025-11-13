@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: CS50 学习平台
-  text: 哈佛大学计算机科学导论课程
+  name: CS50 智汇AI协会2025秋季课程
+  text: CS50哈佛大学计算机科学导论课程
   tagline: 从零开始，系统学习计算机科学基础知识
   actions:
     - theme: brand
