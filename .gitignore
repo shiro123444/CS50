@@ -1,36 +1,32 @@
-# Operating System Files
-.DS_Store
-Thumbs.db
-desktop.ini
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# Editor and IDE
+# Build output
+docs/.vitepress/dist
+docs/.vitepress/cache
+.temp
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.project
-.settings/
 
-# Node modules (if using any build tools)
-node_modules/
-npm-debug.log
-yarn-error.log
+# OS
+.DS_Store
+Thumbs.db
 
-# Build outputs
-dist/
-build/
-.cache/
-
-# Temporary files
-*.tmp
-*.temp
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# GitBook specific
-_book/
-.gitbook/
-
-# Environment files
+# Environment
 .env
 .env.local
+.env.*.local

@@ -1,0 +1,78 @@
+/**
+ * 自定义样式
+ */
+
+/* 优化代码块样式 */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* 优化表格样式 */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+/* 优化引用块样式 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+/* 优化图片样式 */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+}
+
+/* 优化链接样式 */
+.vp-doc a {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+/* 优化标题锚点 */
+.vp-doc .header-anchor {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.vp-doc h1:hover .header-anchor,
+.vp-doc h2:hover .header-anchor,
+.vp-doc h3:hover .header-anchor,
+.vp-doc h4:hover .header-anchor {
+  opacity: 1;
+}
+
+/* 自定义容器样式 */
+.vp-doc .custom-block {
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 24px 16px;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .giscus-container {
+    display: none !important;
+  }
+}
