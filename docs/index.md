@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /courses/chapter-01/
+      link: /courses/chapter-01/lesson-01
     - theme: alt
       text: 查看 GitHub
       link: https://github.com/shiro123444/CS50
@@ -100,7 +100,7 @@ CS50 是哈佛大学的计算机科学导论课程，也是全球最受欢迎的
 准备好了吗？点击下方按钮开始你的计算机科学之旅！
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="/CS50/courses/chapter-01/" style="display: inline-block; padding: 12px 24px; background: var(--vp-c-brand-1); color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
+  <a href="/CS50/courses/chapter-01/lesson-01" style="display: inline-block; padding: 12px 24px; background: var(--vp-c-brand-1); color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
     🚀 开始学习 Week 0
   </a>
 </div>
