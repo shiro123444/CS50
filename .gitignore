@@ -1,6 +1,6 @@
 # Dependencies
 node_modules/
-package-lock.json
+# package-lock.json 需要提交以供 GitHub Actions 使用
 yarn.lock
 pnpm-lock.yaml
 
