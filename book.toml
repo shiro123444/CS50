@@ -1,0 +1,16 @@
+[book]
+authors = ["CS50 Community"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "CS50 社团社区手册"
+description = "CS50社团社区的学习资料和活动记录"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/shiro123444/CS50"
+edit-url-template = "https://github.com/shiro123444/CS50/edit/main/{path}"
