@@ -4,6 +4,13 @@ export default {
   lang: 'zh-CN',
   base: '/CS50/',
   
+  // 忽略死链检查（用于文档中的示例链接）
+  ignoreDeadLinks: [
+    /^http:\/\/localhost/,
+    /\.\.\/\.\.\/\.github\/ISSUE_GUIDE/,
+    /\.\.\/chapter-03\/README/
+  ],
+  
   head: [
     ['link', { rel: 'icon', href: '/CS50/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -54,6 +61,9 @@ export default {
           text: '配置指南',
           items: [
             { text: 'GitHub Pages 配置', link: '/resources/GITHUB_PAGES_SETUP' },
+            { text: 'GitHub Actions 部署', link: '/resources/GITHUB_ACTIONS_SETUP' },
+            { text: '启用 GitHub Pages', link: '/resources/ENABLE_GITHUB_PAGES' },
+            { text: '部署测试清单', link: '/resources/DEPLOYMENT_TEST_CHECKLIST' },
             { text: 'GitBook 配置', link: '/resources/GITBOOK_SETUP_GUIDE' },
             { text: 'Giscus 配置', link: '/resources/GISCUS_SETUP' },
             { text: '启用 Discussions', link: '/resources/ENABLE_DISCUSSIONS' }

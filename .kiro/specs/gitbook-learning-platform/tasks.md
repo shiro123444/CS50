@@ -68,7 +68,12 @@
   - 创建首页（index.md）
   - _Requirements: 1.1, 1.2, 4.1, 5.1_
 
-- [ ] 7. 配置 GitHub Actions 自动部署
+- [x] 7. 配置 GitHub Actions 自动部署
+
+
+
+
+
   - 创建 GitHub Actions 工作流配置文件
   - 配置自动构建和部署到 GitHub Pages
   - 在 GitHub 仓库设置中启用 Pages 功能
@@ -76,6 +81,9 @@
   - _Requirements: 4.2, 4.3, 5.1, 5.2_
 
 - [ ] 8. 集成和测试 Giscus 评论系统
+
+
+
   - 在所有课程页面添加 Giscus 组件
   - 测试评论发布和回复功能
   - 测试深色/浅色主题切换

@@ -1,6 +1,9 @@
 # 社团课程学习平台
 
-欢迎来到我们的在线学习平台！这是一个基于 GitBook 构建的课程学习系统，旨在为社团成员提供结构化的学习内容和互动交流空间。
+[![Deploy Status](https://github.com/shiro123444/CS50/actions/workflows/deploy.yml/badge.svg)](https://github.com/shiro123444/CS50/actions/workflows/deploy.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://shiro123444.github.io/CS50/)
+
+欢迎来到我们的在线学习平台！这是一个基于 VitePress 构建的课程学习系统，旨在为社团成员提供结构化的学习内容和互动交流空间。
 
 ## 平台特色
 
