@@ -4,6 +4,9 @@ export default {
   lang: 'zh-CN',
   base: '/CS50/',
   
+  // 启用简洁 URL（移除 .html 后缀）
+  cleanUrls: true,
+  
   // 忽略死链检查（用于文档中的示例链接）
   ignoreDeadLinks: [
     /^http:\/\/localhost/,
