@@ -60,7 +60,8 @@
   - 配置中文语言和主题适配
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 5.3_
 
-- [x] 6. 配置 GitBook 平台和 Git Sync
+- [-] 6. 配置 GitBook 平台和 Git Sync
+
 
 
 

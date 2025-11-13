@@ -62,6 +62,26 @@
 - 在讨论区寻求帮助
 - 提交 GitHub Issue 报告问题
 
+## 平台管理
+
+### 内容管理员
+
+如果您是内容管理员，需要配置 GitBook 平台，请参考以下文档：
+
+- **📘 [GitBook 配置完整指南](resources/GITBOOK_SETUP_GUIDE.md)** - 详细的配置步骤和故障排除
+- **⚡ [GitBook 快速参考](resources/GITBOOK_QUICK_REFERENCE.md)** - 5 分钟快速配置指南
+- **💬 [Giscus 配置指南](resources/GISCUS_SETUP.md)** - 评论系统配置说明
+
+### 配置流程概览
+
+1. **创建 GitBook 账号** - 使用 GitHub 账号登录
+2. **创建空间** - 导入 Git 仓库
+3. **配置 Git Sync** - 连接 GitHub 仓库，启用自动同步
+4. **测试部署** - 验证内容同步和自动构建
+5. **发布上线** - 分享 GitBook 链接给团队成员
+
+详细步骤请查看 [GitBook 配置完整指南](resources/GITBOOK_SETUP_GUIDE.md)。
+
 ## 开始学习
 
 准备好了吗？点击左侧导航栏开始您的学习之旅！
