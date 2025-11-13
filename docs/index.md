@@ -5,9 +5,6 @@ hero:
   name: CS50 学习平台
   text: 哈佛大学计算机科学导论课程
   tagline: 从零开始，系统学习计算机科学基础知识
-  image:
-    src: /logo.png
-    alt: CS50
   actions:
     - theme: brand
       text: 开始学习

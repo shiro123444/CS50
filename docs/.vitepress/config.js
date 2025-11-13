@@ -22,17 +22,18 @@ export default {
   ],
   
   themeConfig: {
-    logo: '/logo.png',
-    
     nav: [
       { text: '首页', link: '/' },
       { text: '课程', link: '/courses/' },
       { 
         text: '资源', 
         items: [
-          { text: '学习资源', link: '/resources/' },
+          { text: '学习资源', link: '/resources/learning-resources' },
+          { text: 'GitHub Actions 部署', link: '/resources/GITHUB_ACTIONS_SETUP' },
+          { text: '启用 GitHub Pages', link: '/resources/ENABLE_GITHUB_PAGES' },
+          { text: '部署测试清单', link: '/resources/DEPLOYMENT_TEST_CHECKLIST' },
           { text: 'GitBook 配置', link: '/resources/GITBOOK_SETUP_GUIDE' },
-          { text: 'GitHub Pages 配置', link: '/resources/GITHUB_PAGES_SETUP' }
+          { text: 'Giscus 配置', link: '/resources/GISCUS_SETUP' }
         ]
       },
       { text: 'GitHub', link: 'https://github.com/shiro123444/CS50' }
