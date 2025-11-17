@@ -1,3 +1,5 @@
+import { generateSidebar } from 'vitepress-sidebar';
+
 export default {
   title: 'CS50 学习平台',
   description: 'CS50 课程学习和讨论平台',
@@ -39,42 +41,46 @@ export default {
       { text: 'GitHub', link: 'https://github.com/shiro123444/CS50' }
     ],
     
-    sidebar: {
-      '/courses/': [
-        {
-          text: 'Week 0: Scratch - 计算思维入门',
-          collapsed: false,
-          items: [
-            { text: '章节概览', link: '/courses/chapter-01/' },
-            { text: 'CS50 课程介绍', link: '/courses/chapter-01/lesson-01' },
-            { text: 'Scratch 编程基础', link: '/courses/chapter-01/lesson-02' }
-          ]
-        },
-        {
-          text: 'Week 1: C 语言基础',
-          collapsed: false,
-          items: [
-            { text: '章节概览', link: '/courses/chapter-02/' },
-            { text: '从 Scratch 到 C', link: '/courses/chapter-02/lesson-01' },
-            { text: 'C 语言基础语法', link: '/courses/chapter-02/lesson-02' }
-          ]
-        }
-      ],
-      '/resources/': [
-        {
-          text: '配置指南',
-          items: [
-            { text: 'GitHub Pages 配置', link: '/resources/GITHUB_PAGES_SETUP' },
-            { text: 'GitHub Actions 部署', link: '/resources/GITHUB_ACTIONS_SETUP' },
-            { text: '启用 GitHub Pages', link: '/resources/ENABLE_GITHUB_PAGES' },
-            { text: '部署测试清单', link: '/resources/DEPLOYMENT_TEST_CHECKLIST' },
-            { text: 'GitBook 配置', link: '/resources/GITBOOK_SETUP_GUIDE' },
-            { text: 'Giscus 配置', link: '/resources/GISCUS_SETUP' },
-            { text: '启用 Discussions', link: '/resources/ENABLE_DISCUSSIONS' }
-          ]
-        }
-      ]
-    },
+    sidebar: generateSidebar([
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'courses',
+        resolvePath: '/courses/',
+        useTitleFromFileHeading: true,
+        useTitleFromFrontmatter: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        hyphenToSpace: true,
+        underscoreToSpace: true,
+        capitalizeFirst: false,
+        capitalizeEachWords: false,
+        collapsed: false,
+        collapseDepth: 2,
+        sortMenusByFrontmatterOrder: true,
+        excludeFolders: ['.vitepress', 'public'],
+        includeDotFiles: false,
+        includeRootIndexFile: false,
+      },
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'resources',
+        resolvePath: '/resources/',
+        useTitleFromFileHeading: true,
+        useTitleFromFrontmatter: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        hyphenToSpace: true,
+        underscoreToSpace: true,
+        capitalizeFirst: false,
+        capitalizeEachWords: false,
+        collapsed: false,
+        collapseDepth: 2,
+        sortMenusByFrontmatterOrder: true,
+        excludeFolders: ['.vitepress', 'public', 'components', 'files', 'images'],
+        includeDotFiles: false,
+        includeRootIndexFile: false,
+      }
+    ]),
     
     socialLinks: [
       { icon: 'github', link: 'https://github.com/shiro123444/CS50' }
