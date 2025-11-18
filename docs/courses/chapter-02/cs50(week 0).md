@@ -183,12 +183,16 @@ scratch
 3. 导出文件：点击“文件”→“下载项目”，获得  .sb3  格式文件，保存即可
 
 *效果如下*（一般会分为舞台搭建和精灵的制作）
-![舞台](/CS50/images/IMG_20251117_200011.jpg)
-![嘉文超人](/CS50/images/IMG_20251117_195953.jpg)
-![骚钱萝莉](/CS50/images/IMG_20251117_200005.jpg)
+![舞台](/images/IMG_20251117_200011.jpg)
+![嘉文超人](/images/IMG_20251117_195953.jpg)
+![骚钱萝莉](/images/IMG_20251117_200005.jpg)
 
 
 *演示*
-![视频](/CS50/images/VID_20251116_225836.mp4)
+
+<video controls preload="metadata" width="720">
+  <source src="/images/VID_20251116_225836.mp4" type="video/mp4">
+  您的浏览器不支持视频播放。
+</video>
 
 ##感谢您的观看。
