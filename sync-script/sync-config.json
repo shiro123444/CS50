@@ -1,0 +1,15 @@
+{
+  "obsidianDir": "D:\\myobsidian\\myobsidian\\CS50",
+  "attachmentDir": "D:\\myobsidian\\myobsidian\\附件",
+  "targetDocsDir": "docs/courses",
+  "targetImagesDir": "docs/public/images",
+  "ignorePatterns": [
+    "*.tmp",
+    ".obsidian",
+    "node_modules",
+    ".git"
+  ],
+  "directoryMapping": {
+    "default": "chapter-{index}"
+  }
+}

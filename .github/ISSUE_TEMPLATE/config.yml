@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 讨论区
+    url: https://github.com/YOUR_USERNAME/YOUR_REPO/discussions
+    about: 在讨论区与其他学习者交流心得
+  - name: 📚 课程主页
+    url: https://YOUR_GITBOOK_URL
+    about: 返回课程学习平台

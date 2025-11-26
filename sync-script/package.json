@@ -1,0 +1,25 @@
+{
+  "name": "obsidian-vitepress-sync",
+  "version": "1.0.0",
+  "description": "Sync Obsidian notes to VitePress project",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "sync": "node src/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "obsidian",
+    "vitepress",
+    "sync",
+    "markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "fast-check": "^3.15.0"
+  }
+}

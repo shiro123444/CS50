@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+# package-lock.json 需要提交以供 GitHub Actions 使用
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+docs/.vitepress/dist
+docs/.vitepress/cache
+.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.kiro/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
