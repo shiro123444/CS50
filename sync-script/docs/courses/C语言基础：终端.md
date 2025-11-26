@@ -1,0 +1,48 @@
+# CLI(Command line interface) 命令行
+
+> 终端是计算机与操作系统之间的一个交互界面。它允许用户通过命令行输入指令，与操作系统进行交互
+
+也就是我们常常在黑客电影里看到的“黑窗口”
+
+![](/images/Pasted image 20251113180047.png)
+
+而在不同的操作系统中，命令行的快捷打开方式不同：
+- Windows：Win + R，然后输入cmd，回车即可
+- macOS： 通过“应用程序”中的“实用工具”文件夹找到“终端”应用程序
+- Linux： Ctrl+Alt+T
+
+不要尝试在终端里输入中文！
+
+## 论为什么需要使用CLI
+1. 相比于GUI（图形界面）CLI会更加的高效，尤其是在处理大量文件或者进行复杂操作的时候
+2. 自由度更高:用图形界面仅能实现软件开发者预设的功能，而使用命令行则可以通过组合各种命令来实现更复杂的功能
+
+> **terminal、shell、cli、console区别？**
+> 严格来说是不同的概念，但是在大多数技术交流时几乎不做区分
+> 
+> **terminal**（终端）：最初指的是连接到大型计算机的物理设备，现在通常指的是提供命令行界面的 软件。
+   **shell**（外壳）：指的是提供命令行界面的程序，它解释用户输入的命令并将其传递给操作系统执行。
+   **CLI**（命令行界面）：指的是通过命令行与计算机交互的界面。
+   **console**（控制台）：最初指的是计算机的物理控制台，现在通常指的是提供命令行界面的软件，类 似于 terminal。
+
+具体有兴趣的同学可以自行搜索相关有趣的历史
+
+
+## 选择Shell
+
+如何选择自己喜欢的shell？
+
+不同的操作系统有不同默认的shell，比如Linux的bash，windows的cmd
+而在我们大多数人使用的windows环境下 CMD风格太老了，基本与现代开发脱节。
+
+
+## powershell
+
+PowerShell 的命令统一采用的是动词‐名词的格式，和 Linux Shell 的简单缩写形式有很大的不同。这是因为 PowerShell 的设计理念是模仿 C# 的“对象”，而不 是 Linux Shell 的文本流。不过也正因此，PowerShell 本身就是一门完备的语言，功能非常强大，在处理复杂的任务上更为简单。
+
+
+## 常见linux/macOS shell对比图
+![](/images/Pasted image 20251113190428.png)
+
+相关课程：
+[课程概览与 shell · the missing semester of your cs education](https://missing-semester-cn.github.io/2020/course-shell/)
