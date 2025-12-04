@@ -9,7 +9,7 @@
     "sync": "cd sync-script && npm run sync"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0",
+    "vitepress": "^2.0.0-alpha.15",
     "vitepress-sidebar": "^1.33.0",
     "vue": "^3.4.0"
   },
