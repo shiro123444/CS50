@@ -1,5 +1,5 @@
 ## 第七题 mario
-![pyramid](../../public/images/pyramid.png)
+![pyramid](/images/pyramid.png)
 ### 不太自在的版本
 ```c
 //题目集1，marioless金字塔解
@@ -84,7 +84,7 @@ int main(){
 ```
 
 ### 更自在的版本
-![pyramids](../../public/images/pyramids.png)
+![pyramids](/images/pyramids.png)
 ```c
 //题目集1，marioless对称金字塔一解
 
