@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "00082e939bdfb108",
+    "type": "split",
+    "children": [
+      {
+        "id": "71912a2786c23603",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec62cec0c39370e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs50(week 0).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cs50(week 0)"
+            }
+          },
+          {
+            "id": "e948047744d78444",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs50(week 0).md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cs50(week 0)"
+            }
+          },
+          {
+            "id": "0edc608eac7174f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04.CS50(week1).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04.CS50(week1)"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51754cf17550405f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee712caedf01caa3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76b0c7067ff97b8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d6d4d4875843f81a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#include",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e9cb469dea38bbf5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "0451e4fa40e74128",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f1867d4658ce23b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "feef0a18deafbef6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "1401e2cab691ce40",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "d89c10ffdaa595bd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "35ea42d1723087cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04.CS50(week1).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "04.CS50(week1) 的大纲"
+            }
+          },
+          {
+            "id": "141ffcfb5b33614b",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "cs50(week 0).md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "脚注"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "0edc608eac7174f0",
+  "lastOpenFiles": [
+    "附件/Sakura.c",
+    "附件/clannd.c",
+    "附件/air.c",
+    "附件/ai_studio_code (2).c",
+    "附件/ai_studio_code (1).c",
+    "附件/ai_studio_code.c",
+    "04.CS50(week1).md",
+    "cs50(week 0).md",
+    "附件/VID_20251116_225836.mp4",
+    "附件/IMG_20251117_195953.jpg",
+    "附件/IMG_20251117_200011.jpg",
+    "附件/IMG_20251117_200005.jpg",
+    "附件",
+    "cs自学笔记.md",
+    "Untitled 2.base",
+    "Welcome.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "vim.md",
+    "2025-10-29.md",
+    "Untitled.md",
+    "Untitled 1.base"
+  ]
+}
