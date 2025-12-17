@@ -4,9 +4,9 @@
 
 ## 前置条件
 
-- GitHub 仓库已创建
-- VitePress 项目已配置完成
-- 本地代码已推送到 GitHub
+* GitHub 仓库已创建
+* VitePress 项目已配置完成
+* 本地代码已推送到 GitHub
 
 ## 配置步骤
 
@@ -17,17 +17,17 @@
 3. 在左侧菜单中找到 **Pages**
 4. 在 **Source**（源）部分，选择 **GitHub Actions**
 
-![GitHub Pages 设置](../resources/images/github-pages-settings.png)
-
 ### 2. 配置工作流文件
 
 工作流文件已创建在 `.github/workflows/deploy.yml`，包含以下配置：
 
 #### 触发条件
-- 推送到 `master` 分支时自动触发
-- 支持手动触发（workflow_dispatch）
+
+* 推送到 `master` 分支时自动触发
+* 支持手动触发（workflow\_dispatch）
 
 #### 构建步骤
+
 1. 检出代码（包含完整历史记录，用于 lastUpdated 功能）
 2. 设置 Node.js 环境（版本 20）
 3. 安装依赖（npm ci）
@@ -35,14 +35,16 @@
 5. 上传构建产物
 
 #### 部署步骤
-- 将构建产物部署到 GitHub Pages
+
+* 将构建产物部署到 GitHub Pages
 
 ### 3. 权限配置
 
 工作流需要以下权限：
-- `contents: read` - 读取仓库内容
-- `pages: write` - 写入 Pages
-- `id-token: write` - 用于身份验证
+
+* `contents: read` - 读取仓库内容
+* `pages: write` - 写入 Pages
+* `id-token: write` - 用于身份验证
 
 这些权限已在工作流文件中配置。
 
@@ -94,8 +96,8 @@ concurrency:
   cancel-in-progress: false
 ```
 
-- 只允许一个部署同时进行
-- 不取消正在进行的部署，确保生产部署完成
+* 只允许一个部署同时进行
+* 不取消正在进行的部署，确保生产部署完成
 
 ### 缓存优化
 
@@ -107,8 +109,8 @@ concurrency:
     cache: npm
 ```
 
-- 使用 npm 缓存加速依赖安装
-- 减少构建时间
+* 使用 npm 缓存加速依赖安装
+* 减少构建时间
 
 ### 构建产物路径
 
@@ -119,8 +121,8 @@ concurrency:
     path: docs/.vitepress/dist
 ```
 
-- VitePress 默认输出目录为 `docs/.vitepress/dist`
-- 确保路径与 VitePress 配置一致
+* VitePress 默认输出目录为 `docs/.vitepress/dist`
+* 确保路径与 VitePress 配置一致
 
 ## 常见问题
 
@@ -129,6 +131,7 @@ concurrency:
 **问题**: `Error: Resource not accessible by integration`
 
 **解决方案**:
+
 1. 进入仓库 **Settings** > **Actions** > **General**
 2. 在 **Workflow permissions** 部分
 3. 选择 **Read and write permissions**
@@ -140,6 +143,7 @@ concurrency:
 **问题**: 访问站点显示 404 错误
 
 **解决方案**:
+
 1. 检查 VitePress 配置中的 `base` 路径是否正确
 2. 确保 `base: '/repository-name/'` 与仓库名称匹配
 3. 重新构建和部署
@@ -149,6 +153,7 @@ concurrency:
 **问题**: 页面显示但样式丢失或图片无法加载
 
 **解决方案**:
+
 1. 确认 `base` 配置正确
 2. 检查资源路径是否使用相对路径
 3. 在 VitePress 配置中正确设置 `head` 中的资源路径
@@ -158,6 +163,7 @@ concurrency:
 **问题**: 每次构建需要很长时间
 
 **解决方案**:
+
 1. 确保使用 `npm ci` 而不是 `npm install`
 2. 启用 npm 缓存（已在工作流中配置）
 3. 考虑优化依赖项
@@ -167,6 +173,7 @@ concurrency:
 **问题**: 页面底部不显示最后更新时间
 
 **解决方案**:
+
 1. 确保 checkout 步骤包含 `fetch-depth: 0`
 2. 这会获取完整的 Git 历史记录
 3. VitePress 需要 Git 历史来计算更新时间
@@ -224,17 +231,17 @@ on:
 
 部署配置完成后，请验证以下项目：
 
-- [ ] GitHub Pages 已启用并设置为 GitHub Actions
-- [ ] 工作流文件已创建在 `.github/workflows/deploy.yml`
-- [ ] 推送代码后工作流自动触发
-- [ ] 构建任务成功完成（绿色勾号）
-- [ ] 部署任务成功完成（绿色勾号）
-- [ ] 站点可以通过 GitHub Pages URL 访问
-- [ ] 所有页面链接正常工作
-- [ ] 样式和资源正确加载
-- [ ] 搜索功能正常工作
-- [ ] Giscus 评论系统正常加载
-- [ ] 移动端响应式布局正常
+* [ ] GitHub Pages 已启用并设置为 GitHub Actions
+* [ ] 工作流文件已创建在 `.github/workflows/deploy.yml`
+* [ ] 推送代码后工作流自动触发
+* [ ] 构建任务成功完成（绿色勾号）
+* [ ] 部署任务成功完成（绿色勾号）
+* [ ] 站点可以通过 GitHub Pages URL 访问
+* [ ] 所有页面链接正常工作
+* [ ] 样式和资源正确加载
+* [ ] 搜索功能正常工作
+* [ ] Giscus 评论系统正常加载
+* [ ] 移动端响应式布局正常
 
 ## 下一步
 
@@ -247,10 +254,10 @@ on:
 
 ## 相关资源
 
-- [GitHub Actions 文档](https://docs.github.com/en/actions)
-- [GitHub Pages 文档](https://docs.github.com/en/pages)
-- [VitePress 部署指南](https://vitepress.dev/guide/deploy)
-- [actions/deploy-pages](https://github.com/actions/deploy-pages)
+* [GitHub Actions 文档](https://docs.github.com/en/actions)
+* [GitHub Pages 文档](https://docs.github.com/en/pages)
+* [VitePress 部署指南](https://vitepress.dev/guide/deploy)
+* [actions/deploy-pages](https://github.com/actions/deploy-pages)
 
 ## 故障排除
 
@@ -263,6 +270,7 @@ on:
 5. **GitHub 状态**: 检查 GitHub 服务状态
 
 如果问题仍然存在，可以：
-- 查看 GitHub Actions 社区论坛
-- 提交 Issue 到 VitePress 仓库
-- 查看本仓库的 Issues 和 Discussions
+
+* 查看 GitHub Actions 社区论坛
+* 提交 Issue 到 VitePress 仓库
+* 查看本仓库的 Issues 和 Discussions

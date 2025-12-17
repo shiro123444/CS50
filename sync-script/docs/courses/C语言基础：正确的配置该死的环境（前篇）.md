@@ -1,8 +1,8 @@
+# C语言基础：正确的配置该死的环境（前篇）
+
 相信在每一个第一次接触学校的C语言课程的时候总会打开VScode然后吃力的写完代码之后想要运行，但是对着终端的红色报错感到天眩地转？
 
-
-
-## 设计哲学的差异
+### 设计哲学的差异
 
 **Windows**：面对普通用户，强调开箱即用，不预设用户是开发者
 
@@ -10,147 +10,121 @@
 
 基于最开始的设计哲学，Linux和Windows也走向了不同的方向：我们可以在windows平台体验更多的成品应用程序比如游戏等，而在开发便捷性方面则是linux更胜一筹。
 
+### 包管理差异
 
-## 包管理差异
-**Windows**:传统上缺乏统一的包管理，需要手动下载
-**Linux**：有成熟的包管理（apt/yum/pacman），一键安装编译工具链
+**Windows**:传统上缺乏统一的包管理，需要手动下载 **Linux**：有成熟的包管理（apt/yum/pacman），一键安装编译工具链
 
-## 环境集成
-**Windows**：需要显示配置PATH环境变量来定位可执行文件
-**Linux**：工具链深度集成，编译器已经在标准路径中
+### 环境集成
 
+**Windows**：需要显示配置PATH环境变量来定位可执行文件 **Linux**：工具链深度集成，编译器已经在标准路径中
 
 这里我们将提供三种不同的思路去完成C环境的配置，三种方式的成本都没有很大，都可以作为大家以后尝试长期开发参考的方式。
 
----
+***
 
-## 纯Windows上搭建C/C++编程环境
+### 纯Windows上搭建C/C++编程环境
 
 > “环境变量”是操作系统的重要变量PATH，在Windows操作系统分为用户变量和系统变量 。该变量存储了一系列路径，当用户在命令行中输入一个命令的时候，操作系统会在这些路径中查找可执行文件。如果找到了，则会运行该文件，否则会提示“命令未找到”之类的错误。
 
+!\[]\(/images/Pasted image 20251114115530.png)
 
-![](/images/Pasted image 20251114115530.png)
 > 系统变量和用户变量的区别是作用范围和影响对象的不一样
 
 c/c++三个最常见的编译器：GCC、Clang和MSVC
 
 三个编译器各有特点，他们通常会与特定的C标准库是实现配合使用
 
+### GCC
 
-## GCC
-有两种方式：
-手动下载和配置GCC，我们推荐使用MSYS2或者CYgwin安装GCC，他们提供了一个完整的UNIX环境，免去了在windows上配置编译器的麻烦
-
+有两种方式： 手动下载和配置GCC，我们推荐使用MSYS2或者CYgwin安装GCC，他们提供了一个完整的UNIX环境，免去了在windows上配置编译器的麻烦
 
 官网：[MSYS2](https://www.msys2.org/)
 
-![](/images/Pasted image 20251116173916.png)
+!\[]\(/images/Pasted image 20251116173916.png)
 
 进入后选择第一个即可（默认大家windows都是 x86）
 
+如果还尚未能访问外网的同学可以尝试从北大网盘下载（再次感谢） [北大網盤](https://disk.pku.edu.cn/anyshare/zh-tw/link/AADF534C03FA714DC982607A17BEF8A178?_tb=none\&expires_at=2026-09-01T17%3A48%3A47%2B08%3A00\&item_type=file\&password_required=false\&title=msys2-x86_64-20250622.exe\&type=anonymous\&verify_mobile=false)
 
-如果还尚未能访问外网的同学可以尝试从北大网盘下载（再次感谢）
-[北大網盤](https://disk.pku.edu.cn/anyshare/zh-tw/link/AADF534C03FA714DC982607A17BEF8A178?_tb=none&expires_at=2026-09-01T17%3A48%3A47%2B08%3A00&item_type=file&password_required=false&title=msys2-x86_64-20250622.exe&type=anonymous&verify_mobile=false)
-
-
-安装完成后打开MSY2终端，运行以下命令来安装GCC和GDB
-![](/images/23a978bb299e87f0459f30e3c370a9d5.png)
+安装完成后打开MSY2终端，运行以下命令来安装GCC和GDB&#x20;
 
 ```
 pacman -S mingw-w64-ucrt-x86_64-gcc
 pacman -S mingw-w64-ucrt-x86_64-gdb
 ```
 
-
-分别输入后，计算机会查找相关包，分别两次输入“y”后安装完成
-![](/images/f3cf5d1df3f0658cfb7e8880d299b9ac.png)
-
-![](/images/144b0f63ddac2acca8acb117b98c5803.png)
+分别输入后，计算机会查找相关包，分别两次输入“y”后安装完成&#x20;
 
 在MSYS2中安装完成后，用户如果想要在Windows终端中使用GCC，则需要设计环境变量，以便在命令行中直接使用编译器命令
 
 1. 找到MSYS2安装目录
 2. 将bin文件的地址添加到环境变量中
 
-![](/images/8c9c51efe9f3aed717c3fac6f795c680.png)
-
-在设置里打开“编辑系统环境变量”
-![](/images/28e4bc918a8edc77a56dececee885b00.png)
-
-
-![](/images/203f4662a62391205f43505d330611c9.png)
+在设置里打开“编辑系统环境变量”&#x20;
 
 选择系统变量的“Path”
 
-![](/images/78cfcf05689e6bb534588dac34a2729d.png)
-
-
-![](/images/d71e861e66c6edee481598c7eeb4f451.png)
-
 进入后点击新建，输入我们的bin路径
-
-![](/images/07b216146108df54cb5e8700ff74b9ff.png)
 
 确认即可
 
 可以运行powershell输入命令
+
 ```
 gcc --version
 gdb --version
 ```
 
-![](/images/9bdc3876848d5f10079c081f7d3f9b8d.png)
+***
 
-___
-###  可能的错误
-1. 未使用上面方法，而是使用预编译版本。
-请不要将 GCC 安装在包含非 ASCII 字符（如汉字、空格）的路径下，注意检查是否路径有中文名称。
-2. 有的同学windows未使用utf-8编码，而是使用 GBK 编码，而导致GCC无法正确处理包含非 ASCII 字符的文件名。
-建议将系统的区域设置更改为 使用 UTF‐8 编码，具体方法请自行Google
+#### 可能的错误
 
+1. 未使用上面方法，而是使用预编译版本。 请不要将 GCC 安装在包含非 ASCII 字符（如汉字、空格）的路径下，注意检查是否路径有中文名称。
+2. 有的同学windows未使用utf-8编码，而是使用 GBK 编码，而导致GCC无法正确处理包含非 ASCII 字符的文件名。 建议将系统的区域设置更改为 使用 UTF‐8 编码，具体方法请自行Google
 
-# 配置vscode C/C++环境
+## 配置vscode C/C++环境
+
 在系统上我们刚才已经安装并且配置了windows环境的编译器，现在我们需要继续在我们的编辑器中进行配置。
 
-我们极力 推荐VSCODE作为我们的编辑器，以轻量化和可拓展性为主要优势（注意实是蓝色的，而不是紫色的）
- **编辑器 + 代码理解 + 调试**作为vscode的核心原理，插件则是其灵魂。
-### workspace
-对于插件拓展来说，我们的工作很大一定程度都是基于当前的工作目录，并帮助你输入编译和调试命令，所以在我们编写项目的时候请一定先确定工作区是一个文件夹，而不是**文件**
-这里推荐会用到的是微软官方的三个关于c的插件，他确保了我们可以方便的使用我们之前在Windows配置好的编译器，而themes则是让c/c++代码高亮，以便更好的查阅代码
+我们极力 推荐VSCODE作为我们的编辑器，以轻量化和可拓展性为主要优势（注意实是蓝色的，而不是紫色的） **编辑器 + 代码理解 + 调试**作为vscode的核心原理，插件则是其灵魂。
 
+#### workspace
 
-会用到的插件：
-![](/images/Pasted image 20251125172045.png)
-![](/images/Pasted image 20251125172105.png)
+对于插件拓展来说，我们的工作很大一定程度都是基于当前的工作目录，并帮助你输入编译和调试命令，所以在我们编写项目的时候请一定先确定工作区是一个文件夹，而不是**文件** 这里推荐会用到的是微软官方的三个关于c的插件，他确保了我们可以方便的使用我们之前在Windows配置好的编译器，而themes则是让c/c++代码高亮，以便更好的查阅代码
 
-## task.json
+会用到的插件： !\[]\(/images/Pasted image 20251125172045.png) !\[]\(/images/Pasted image 20251125172105.png)
+
+### task.json
+
 用于定义可运行的任务（例如编译、清理、测试），可通过 Run Build Task（Ctrl+Shift+B）运行，且可被 launch.json 的 preLaunchTask 引用以在调试前先编译。
 
-操作：在vscode中打开一个新的工作区，创建一个C++文件，输入代码，编译，vscode首次会提醒你创建一个tasks.json，选择“**C/C++: g++.exe 生成活动文件**”,这将会在项目根目录下创建一个 **.vscode/tasks.json** 文件。
-如果你创建的是 C 文件,你可以选择“**C/C++: gcc.exe** 生成活动文件”。
+操作：在vscode中打开一个新的工作区，创建一个C++文件，输入代码，编译，vscode首次会提醒你创建一个tasks.json，选择“**C/C++: g++.exe 生成活动文件**”,这将会在项目根目录下创建一个 **.vscode/tasks.json** 文件。 如果你创建的是 C 文件,你可以选择“**C/C++: gcc.exe** 生成活动文件”。
 
-## launch.json
+### launch.json
+
 用于保存调试器配置（程序路径 program、参数 args、工作目录 cwd、以及 preLaunchTask 等），在“运行与调试”时选择不同配置。
 
 在vscode中按下F5，选择c++（GDB/LLDB），然后选择**g++.exe build and debug active file**
 
+除此之外，我们还可以手动不依赖vscode来编译和运行c/c++代码 例如：
 
-除此之外，我们还可以手动不依赖vscode来编译和运行c/c++代码
-例如：
 ```c
 gcc main.c -O -g -o main.exe 
 ./main.exe
 ```
+
 解释：
-- gcc：调用 GNU C 编译器。
-- main.c：源文件。
-- -O：开启优化（等同 -O1），还有 -O0 / -O1 / -O2 / -O3 / -Ofast / -Os 等不同级别。
-- -g：生成调试信息（供 gdb/调试器使用）。
-- -o main.exe：指定输出文件名为 main.exe。
+
+* gcc：调用 GNU C 编译器。
+* main.c：源文件。
+* -O：开启优化（等同 -O1），还有 -O0 / -O1 / -O2 / -O3 / -Ofast / -Os 等不同级别。
+* -g：生成调试信息（供 gdb/调试器使用）。
+* -o main.exe：指定输出文件名为 main.exe。
 
 感觉命令太长了，如何简化？
 
-## makefile
+### makefile
+
 makefile是一份说明书：目标（target）与规则(commands、依赖关系)的文本文件，用来自动化构建流程（一个命令完成多个步骤）
 
 假设项目只有一个 main.c，生成 main.exe。
@@ -180,10 +154,9 @@ clean:  # 清理
     rm -f $(OBJ) $(EXEC)
 ```
 
-- 运行：`make`（编译）、`make run`（运行）、`make clean`（清理）。
+* 运行：`make`（编译）、`make run`（运行）、`make clean`（清理）。
 
-
- 多文件示例（带目录结构）
+多文件示例（带目录结构）
 
 假设 src/ 下有多个 .c 文件，obj/ 放 .o，bin/ 放 exe。
 
@@ -214,18 +187,11 @@ clean:
     rm -rf obj bin
 ```
 
-
 让make如何被powershell识别？
+
 1. **安装 MSYS2 并确保 \msys64\mingw64\bin 下有 mingw32-make.exe**（如无 make.exe，可复制 mingw32-make.exe 为 make.exe）
 2. **将 D:\msys64\mingw64\bin 添加到系统环境变量 PATH 的最前面**
 3. **重启电脑或注销/重启 Explorer**
 4. **在新开的 PowerShell/cmd/VS Code 终端运行 where.exe make**
 
 > 我们前面所讲的知识已经足够你完成配置make命令了哦，快来试试吧！评论区欢迎晒出你的问题和结果！
-
-
-
-
-
-
-
